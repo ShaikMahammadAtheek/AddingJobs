@@ -1,0 +1,64 @@
+/* JobsList.css */
+
+.jobs-list {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;  /* Limit the maximum width */
+    margin: auto;  /* Center the component */
+}
+
+.jobs-list h2 {
+    text-align: center;  /* Center the heading */
+    margin-bottom: 20px;  /* Space below the heading */
+}
+
+.jobs-list ul {
+    list-style-type: none;  /* Remove default list style */
+    padding: 0;  /* Remove default padding */
+}
+
+.jobs-list li {
+    background-color: #ffffff;
+    margin: 10px 0;  /* Space between list items */
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;  /* Transition for box-shadow */
+}
+
+.jobs-list li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Shadow on hover */
+}
+
+.jobs-list h3 {
+    margin: 0;  /* Remove default margin */
+}
+
+.jobs-list p {
+    margin: 5px 0;  /* Space above and below paragraph */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .jobs-list {
+        padding: 15px;  /* Less padding on smaller screens */
+    }
+
+    .jobs-list h2 {
+        font-size: 20px;  /* Slightly smaller font for the heading */
+    }
+
+    .jobs-list li {
+        padding: 10px;  /* Less padding for list items */
+    }
+
+    .jobs-list h3 {
+        font-size: 18px;  /* Smaller font size for job titles */
+    }
+
+    .jobs-list p {
+        font-size: 14px;  /* Smaller font size for descriptions */
+    }
+}

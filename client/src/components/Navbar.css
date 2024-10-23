@@ -1,0 +1,93 @@
+/* Navbar.css */
+/* .navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #007bff;
+        width: 100%;
+        display: none; 
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+} */
+
+
+/* Navbar.css */
+
+nav {
+    display: flex;                     /* Use flexbox for layout */
+    justify-content: space-between;    /* Space between items */
+    align-items: center;               /* Center items vertically */
+    background-color: #343a40;        /* Dark background color */
+    padding: 10px 20px;               /* Padding around the nav */
+    color: white;                     /* White text color */
+    position: relative;               /* Positioning context */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+nav h2 {
+    margin: 0;                       /* Remove default margin */
+    font-size: 24px;                 /* Font size for the title */
+}
+
+nav a {
+    color: white;                    /* White link color */
+    text-decoration: none;           /* Remove underline */
+    padding: 10px 15px;             /* Padding around links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    border-radius: 5px;              /* Rounded corners on hover */
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;      /* Stack items vertically on small screens */
+        align-items: flex-start;     /* Align items to the left */
+    }
+
+    nav h2 {
+        margin-bottom: 10px;         /* Space below the title */
+    }
+
+    nav a {
+        width: 100%;                 /* Full width for links */
+        padding: 10px;               /* Padding for clickable area */
+        text-align: center;          /* Center text in links */
+    }
+}
